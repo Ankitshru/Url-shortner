@@ -1,0 +1,530 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    /********Primary**********/
+    --Cyan: hsl(180, 66%, 49%);
+    --DarkViolet: hsl(257, 27%, 26%);
+    /********Secondary********/
+    --Red: hsl(0, 87%, 67%);
+    /******* Neutral ********/
+    --Gray: hsl(0, 0%, 75%);
+    --GrayishViolet: hsl(257, 7%, 63%);
+    --VeryDarkBlue: hsl(255, 11%, 22%);
+    --VeryDarkViolet: hsl(260, 8%, 14%);
+    }
+
+/****************** Container ******************/
+.main-header{
+    display: flex;
+    align-items: center;
+    height: 120px;
+    justify-content: center;
+    gap: 2.5em;
+}
+.navbar{
+    display: flex;
+    width: 70%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.front-display{
+    width: 100%;
+    display: flex;
+    height: 40em;/*35*/
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3em;
+}
+
+.left-display-div{
+    width: 45%;
+    height: 24em;
+    position: relative;
+    left: 118px;
+    top: -30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.url-div{
+    height: 11em;
+    width: 82%;
+    z-index: 100;
+    border-radius: 10px;
+    position: relative;
+    bottom: 125px;
+    left: 118px;
+    background-color: var(--DarkViolet);
+    background-image: url(images/bg-shorten-desktop.svg);
+}
+.shorten-link{
+    position: relative;
+    bottom: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.shorten-link input[type=text]{
+    height: 60px;
+    width: 75%;
+    border: none;
+    border-radius: 12px;
+    padding: 30px;
+    font-size: 1.2em;
+    font-weight: 500;
+    font-family: "Poppins";
+    color: var(--Gray);
+}
+.url-short-btn{
+    height: 60px;
+    width: 15%;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--Cyan);
+    font-size: 1.2em;
+    color: white;
+    font-weight: 700;
+}
+.more-info{
+    background-color: hsl(0, 0%, 95%);
+    margin-top: -14em;
+    height: 60em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box0-brand-statistics{
+    text-align: center;
+    width: 35%;
+    position: relative;
+    top: 40px;
+}
+
+.box-wrapper{
+    display: flex;
+    align-items: center;
+    width: 82%;
+    height: 28em;
+    gap: 1.5em;
+    position: relative;
+    top: 40px;
+}
+.box1-brand-recognition, .box2-records, .box3-custmization{
+    height: 15em;
+    width: 90%;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.box2-records{
+    margin-top: 80px;
+}
+.box3-custmization{
+    margin-top: 180px;
+}
+.line{
+    border: 5px solid var(--Cyan);
+    width: 50%;
+    position: relative;
+    left: 120px;
+    top: 330px;
+}
+
+.action-text{
+    height: 12em;
+    width: 100%;
+    background-image: url(images/bg-boost-desktop.svg);
+    background-color: var(--DarkViolet);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.footer{
+    height: 18em;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    background-color: var(--VeryDarkBlue);
+}
+.main-ul{
+    list-style: none;
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+.li-feature ul, 
+.li-resources ul, 
+.li-company ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--GrayishViolet);
+    font-family: "Poppins";
+    font-size: 14px;
+    margin-top: 15px;
+}
+.social-links{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+}
+img.footer-logo{
+    fill: #fff;
+    
+    margin-bottom: 90px;
+}
+/******************* Navigation **********************/
+.ul-nav{
+    list-style: none;
+    display: flex;
+    gap: 2em;
+}
+.ul-nav2{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.4em;
+    margin-right: 30px;
+}
+
+/*********************** links ************************/
+
+.ul-nav a, .ul-nav2 a{
+    text-decoration: none;
+    font-weight: 700;
+    font-family: 'Poppins';
+    color: var(--GrayishViolet);
+}
+.signUp-link button{
+    background-color: var(--Cyan);
+    width: 6.5em;
+    height: 35px;
+    border: none;
+    border-radius: 20px;
+    font-family: "Poppins";
+    color: white;
+}
+
+.link-btn{
+    height: 45px;
+    width: 150px;
+    border-radius: 40px;
+    font-family: "Poppins";
+    font-size: 1em;
+    font-weight: 700;
+    border: none;
+    background-color: var(--Cyan);
+    color: white;
+
+}
+/*********************** Text And Fonts ***********************/
+.left-display-div h1{
+    font-size: 5em;
+    font-family: "Poppins";
+    font-weight: 700;
+    color: var(--VeryDarkViolet);
+    line-height: 1.1;
+}
+.brand-message{
+    width: 85%;
+    color: var(--GrayishViolet);
+    font-family: "Poppins";
+    font-size: 1.5em;
+}
+
+.get-started-btn{
+    height: 70px;
+    width: 200px;
+    background-color: var(--Cyan);
+    border-radius: 15px;
+    border: none;
+    font-family: "Poppins";
+    font-size: 1.1em;
+    color: white;
+    margin-top: 50px;
+}
+.header-stats{
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 2.1em;
+}
+.para-stats{
+    font-family: "Poppins";
+    font-weight: 500;
+    color: hsl(257, 7%, 68%);
+}
+
+.head-font-recongnition, .head-font-records, .head-font-cust{
+    font-size: 1.3em;
+    font-family: "Poppins";
+    color: var(--VeryDarkViolet);
+    margin-left: 30px;
+    margin-top: -40px;
+}
+.brand-recon-msg, .record-msg, .customise-msg{
+    font-family: "Poppins";
+    color: var(--GrayishViolet);
+    width: 85%;
+    height: 50%;
+    margin-left: 30px;
+}
+.record-msg{
+    width: 88%;
+}
+.link-boost-header{
+    font-family: "Poppins";
+    font-size: 2em;
+    color: white;
+}
+/*********************** Font  **********************/
+
+/*********************** Images ********************/
+.brand-icon, .record-icon, .icon-custom{
+    background-color: var(--VeryDarkBlue);
+    border-radius: 50%;
+    transform: translate(30%, -50%);
+    padding: 20px;
+}
+.img-box img {
+    width: 570px;
+    height: 570px;
+}
+.navbar-menu{
+    display: none;
+
+}
+.navbar-close-menu{
+    display: none;
+    
+}
+/********************** Hover and Focus ************/
+.ul-nav a:hover, .ul-nav2 a:hover{
+    color: var(--VeryDarkBlue);
+}
+.get-started-btn:hover, 
+.signUp-link button:hover,
+.url-short-btn:hover,
+.link-btn:hover{
+    filter:opacity(.5);
+    cursor: pointer;
+}
+.li-feature ul li:hover, 
+.li-resources ul li:hover, 
+.li-company ul li:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+} 
+.social-links img:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+/******************************************************************/
+
+/**************************Responsive design*********************/
+@media screen and (max-width: 480px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        border: solid;
+        width: 100%;
+    }
+    .main-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 7em;
+    }
+    .navbar{
+        display: none;
+    }
+    .navbar-menu{
+        display: block;
+    }
+    .img-box img{
+        width: 100%;
+        height: 320px;
+        position: relative;
+        top: 50px;
+    }
+    .front-display{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        height: 50em;/*35*/
+        gap: 3em;
+    }
+
+    .left-display-div {
+        min-width: 100%;
+        height: 50em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+        position: relative;
+        left: 0px;
+        top: 10px;
+    }
+    .left-display-div h1 {
+        font-size: 2.5em;
+        font-family: "Poppins";
+        font-weight: 700;
+        color: var(--VeryDarkViolet);
+        line-height: 1.1;
+        text-align: center;
+    }
+    .brand-message {
+        max-width: 90%;
+        color: var(--GrayishViolet);
+        font-family: "Poppins";
+        font-size: 1.1em;
+        text-align: center;
+    }
+    .get-started-btn {
+        height: 56px;
+        width: 210px;
+        font-size: 1.2em;
+        border-radius: 50px;
+        margin-top: 20px;
+    }
+
+    .url-div {
+        width: 90%;
+        left: 22px;
+    }
+
+    .shorten-link {
+        bottom: 1px;
+        height: 11em;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .shorten-link input[type=text] {
+        height: 10px;
+        width: 80%;
+        font-size: 1.1em;
+    }
+
+    .url-short-btn {
+        height: 50px;
+        width: 80%;
+        font-size: 1.2em;
+    }
+    .box0-brand-statistics{
+        /*width: 80%;
+        width: 90%;
+        top: 0px;
+        line-height: 2;*/
+        width: 90%;
+        top: 143px;
+        line-height: 2;
+    }
+    .header-stats {
+        /*font-size: 1.6em;*/
+        font-size: 2.3em;
+    }
+    .para-stats {
+        display: inline-flex;
+        align-items: center;
+        /*width: 80%;
+        font-size: 14px;*/
+        width: 80%;
+        font-size: 19px;
+    }
+    .more-info {
+        height: 90em;
+        justify-content: flex-start;
+    }
+    .line{
+        width: 0;
+        height: 39em;
+        position: absolute;
+        top: 88em;
+        left: 50%;
+    }
+    .box-wrapper{
+        flex-direction: column;
+        gap: 0;
+        height: 55em;
+        top: 253px;
+    }
+    .box2-records{
+        margin-top: 105px;
+    }
+    .box3-custmization{
+        margin-top: 105px;  
+    }
+    .box1-brand-recognition, .box2-records, .box3-custmization{
+        width: 100%;
+    }
+    .head-font-recongnition, .head-font-records, .head-font-cust{
+        margin-left: 85px;
+    }
+    .brand-icon{
+        /*position: relative;
+        top: 0px;
+        left: 113px;*/
+        transform: translate(165%, -50%);
+    }   
+    .record-icon{
+        /*position: relative;
+        top: 0px;
+        left: 118px;*/
+        transform: translate(175%, -50%);
+    }
+    .icon-custom{
+        /*position: relative;
+        top: 0px;
+        left: 110px;*/
+        transform: translate(155%, -50%);
+    }
+    .brand-recon-msg, .record-msg, .customise-msg{
+        margin: 10p auto;
+    }
+    .footer{
+        height: 48em;
+        flex-direction: column;
+    }
+    img.footer-logo{
+        margin: 68px auto;
+    }
+
+    .main-ul{
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5em;
+    }
+    .li-feature{
+        text-align: center;
+    }
+
+    .li-feature ul, .li-resources ul, .li-company ul{
+        align-items: center;
+    }
+}
