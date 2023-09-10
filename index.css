@@ -446,27 +446,30 @@ img.footer-logo{
         line-height: 2;
     }
     .header-stats {
-        /*font-size: 1.6em;*/
-        font-size: 2.3em;
+        /*font-size: 1.6em;
+        font-size: 2.3em;*/
+        font-size: 1.8em;
     }
     .para-stats {
         display: inline-flex;
         align-items: center;
         /*width: 80%;
-        font-size: 14px;*/
+        font-size: 14px;
         width: 80%;
-        font-size: 19px;
+        font-size: 19px;*/
+        width: 100%;
+        font-size: 17px;
     }
     .more-info {
         height: 90em;
         justify-content: flex-start;
     }
     .line{
-        width: 0;
-        height: 39em;
-        position: absolute;
-        top: 88em;
-        left: 50%;
+       width: 0;
+    height: 54em;
+    position: absolute;
+    top: 83em;
+    left: 50%;
     }
     .box-wrapper{
         flex-direction: column;
@@ -484,25 +487,28 @@ img.footer-logo{
         width: 100%;
     }
     .head-font-recongnition, .head-font-records, .head-font-cust{
-        margin-left: 85px;
+        margin-left: 52px;
     }
     .brand-icon{
         /*position: relative;
         top: 0px;
-        left: 113px;*/
-        transform: translate(165%, -50%);
+        left: 113px;
+        transform: translate(165%, -50%);*/
+        margin: 0px 81px;
     }   
     .record-icon{
         /*position: relative;
         top: 0px;
-        left: 118px;*/
-        transform: translate(175%, -50%);
+        left: 118px;
+        transform: translate(175%, -50%);*/
+        margin: 0px 85px;
     }
     .icon-custom{
         /*position: relative;
         top: 0px;
-        left: 110px;*/
-        transform: translate(155%, -50%);
+        left: 110px;
+        transform: translate(155%, -50%);*/
+        margin: 0px 80px
     }
     .brand-recon-msg, .record-msg, .customise-msg{
         margin: 10p auto;
