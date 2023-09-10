@@ -511,7 +511,8 @@ img.footer-logo{
         margin: 0px 80px
     }
     .brand-recon-msg, .record-msg, .customise-msg{
-        margin: 10p auto;
+        margin: 10px auto;
+        text-align: center;
     }
     .footer{
         height: 48em;
