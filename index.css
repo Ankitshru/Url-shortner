@@ -533,4 +533,7 @@ img.footer-logo{
     .li-feature ul, .li-resources ul, .li-company ul{
         align-items: center;
     }
+    .link-boost-header{
+        font-size: 1.8em;
+    }
 }
